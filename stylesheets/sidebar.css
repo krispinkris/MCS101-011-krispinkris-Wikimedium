@@ -1,0 +1,15 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+
+}
+
+nav ul li {
+
+}
+
+nav > ul > li: first-child
