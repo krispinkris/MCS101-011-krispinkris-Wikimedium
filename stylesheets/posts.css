@@ -1,14 +1,61 @@
 .posts {
-  background-image: url(../imades/posts_mockup.png);
   background-position: center -10px;
   background-repeat: no-repeat;
 }
 
 .posts.bg {
-  background-image: url(../imades/posts_mockup.png);
+  background-image: url(../images/posts_mockup.png);
 }
 
 .postsFeed a {
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 1);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
+  display: block;
+  width: 740px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+.postsFeed a:first-of-type {
+  margin-top: 91px;
+}
+
+.postsFeed figure {
+  margin-bottom: 31px;
+  width: 700px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+  font-size: 29px;
+  line-height: 35px;
+  color: rgba(0, 0, 0, .8);
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 23px;
+  font-size: 21px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, .4);
+}
+
+h2 + p {
+  margin-top: 10px;
+}
+
+.menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  min-width: 768px;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
 }
