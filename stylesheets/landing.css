@@ -14,19 +14,18 @@ body.landing.bg .landingWrapper {
 
 body.landing .menubar {
   width: 1440px;
-  margin: 0 auto;
 }
 
 .landingWrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1440px;
   margin: 0 auto;
   box-shadow: 0 0 10px 0 rgba(0,0,0,.20);
   background-color: white;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .mainSection {
@@ -39,23 +38,22 @@ body.landing .menubar {
 .mainSection div {
   position: absolute;
   top: 150px;
-  left: 160px;
   width: 580px;
 }
 
-.mainSection .left div {
+.mainSection.left div {
   left: 160px;
 }
 
-.mainSection .left .pattern {
+.mainSection.left .pattern {
   margin-left: -60px;
 }
 
-.mainSection .right div {
+.mainSection.right div {
   right: 160px;
 }
 
-.mainSection .right .pattern {
+.mainSection.right .pattern {
   margin-left: 430px;
 }
 
@@ -80,7 +78,9 @@ body.landing .menubar {
 }
 
 .mockup {
-  position: relative;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
 }
 
 #mockup1 {
@@ -106,6 +106,7 @@ body.landing .menubar {
   height: 779px;
   background-image: url(../images/landing/landing-mockup-3.jpg);
 }
+
 
 @media all and (max-width: 1440px) {
   .landingWrapper {
