@@ -8,6 +8,7 @@
   line-height: 15px;
   color: rgba(0, 0, 0, 0.8);
   opacity: .1;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
